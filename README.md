@@ -48,5 +48,5 @@ All contributions to the Linux Kernel are subject to this COPYING file.
 
 ## Acknowledgments
 
-* Linus Torvalds
+* [Linus Torvalds](https://github.com/torvalds)
 * [slanavoda](https://github.com/slanavoda)
