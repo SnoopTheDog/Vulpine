@@ -4,7 +4,7 @@ Minimalistic kernel edited for personal use, I do not advise using it.
 
 ## Why
 
-Because I don't have anything better to do.
+Because I am stoopid.
 
 ### System
 
