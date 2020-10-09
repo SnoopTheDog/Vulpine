@@ -408,11 +408,11 @@ HOST_LFS_LDFLAGS := $(shell getconf LFS_LDFLAGS 2>/dev/null)
 HOST_LFS_LIBS := $(shell getconf LFS_LIBS 2>/dev/null)
 
 ifneq ($(LLVM),)
-HOSTCC	= clang
-HOSTCXX	= clang++
+HOSTCC	= /usr/bin/ccache clang
+HOSTCXX	= /usr/bin/ccache clang++
 else
-HOSTCC	= gcc
-HOSTCXX	= g++
+HOSTCC	= /usr/bin/ccache gcc
+HOSTCXX	= /usr/bin/ccache g++
 endif
 
 export KBUILD_USERCFLAGS := -Wall -Wmissing-prototypes -Wstrict-prototypes \
@@ -427,7 +427,7 @@ KBUILD_HOSTLDLIBS   := $(HOST_LFS_LIBS) $(HOSTLDLIBS)
 # Make variables (CC, etc...)
 CPP		= $(CC) -E
 ifneq ($(LLVM),)
-CC		= clang
+CC		= /usr/bin/ccache clang
 LD		= ld.lld
 AR		= llvm-ar
 NM		= llvm-nm
