@@ -1,6 +1,6 @@
 # Vupine
 
-Minimalistic kernel edited for personal use, I do not advise using it.
+Minimalistic kernel edited for personal use.
 
 ## Why
 
